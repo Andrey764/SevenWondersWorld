@@ -1,0 +1,26 @@
+.Conteiner{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.List{
+    width: 50px;
+}
+
+.Info{
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+}
+.InfoHeader,
+.InfoContent{
+    font-style: italic;
+}
+.InfoHeader{
+    text-align: center;
+    width: 100%;
+}
+.InfoContent{
+    text-align: left;
+    font-size: 130%;
+}

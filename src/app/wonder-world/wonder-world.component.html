@@ -1,0 +1,12 @@
+<div [ngClass]="{Conteiner:true}">
+    <ul [ngClass]="{List:true}">
+        <li *ngFor="let item of SevenWondersWorld">
+            <img [src]="item.Path" width="100%" [alt]="item.Title" (click)="InfoWonderWorld(item.Title)">
+        </li>
+    </ul>
+    
+    <div [ngClass]="{Info:true}">
+        <h2 [ngClass]="{InfoHeader:true}">{{SevenWondersWorld[Active].Title}}</h2>
+        <p [ngClass]="{InfoContent:true}">{{SevenWondersWorld[Active].Description}}</p>
+    </div>
+</div>
